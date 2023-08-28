@@ -29,8 +29,11 @@ website: |-
           <a href="my-service/" class="tile">
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Kotlin_Icon_2021.svg/2048px-Kotlin_Icon_2021.svg.png" alt="My Service">
           </a>
-          <a href="elasticsearch" class="tile">
+          <a href="kibana" class="tile">
               <img src="https://www.sunzinet.com/hs-fs/hubfs/02.%20Badges%20and%20Certificates/Partner%20Logos/elasticsearch-agentur-SUNZINET.jpg?width=866&height=650&name=elasticsearch-agentur-SUNZINET.jpg">
+          </a>
+          <a href="elasticsearch" class="tile">
+              <img src="https://zammad.com/media/pages/product/features/kibana-integration/e0ff6e3ce1-1691395230/kibana-integration-256x.png">
           </a>
       </div>
   </div>

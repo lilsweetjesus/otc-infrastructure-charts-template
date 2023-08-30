@@ -31,6 +31,13 @@ charts:
     targetRevision: 0.3.0
     parameters:
       clusterIssuer.http.email: "my-mail@mail.com"
+  kasm:
+    namespace: kasm
+    repoURL: "https://charts.iits.tech"
+    targetRevision: "0.1.1"
+    parameters:
+      services.firstuser.extraEnv.VNC_PW: "user"
+      services.firstuser.ingressRoute.domain: "user"
   basic-auth-gateway:
     namespace: routing
     targetRevision: 0.6.1

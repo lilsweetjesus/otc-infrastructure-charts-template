@@ -35,6 +35,9 @@ website: |-
           <a href="kibana" class="tile">
               <img src="https://zammad.com/media/pages/product/features/kibana-integration/e0ff6e3ce1-1691395230/kibana-integration-256x.png">
           </a>
+          <a href="kasm" class="tile">
+              <img src="https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/f6522f19-d527-42e1-8027-b655b069bccb.png?w=90&h=90&fit=max&dpr=3&auto=format&q=50">
+          </a>
       </div>
   </div>
   </body>

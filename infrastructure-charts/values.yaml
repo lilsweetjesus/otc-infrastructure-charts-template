@@ -36,7 +36,7 @@ charts:
     repoURL: "https://charts.iits.tech"
     targetRevision: "0.1.1"
     parameters:
-      services.firstuser.extraEnv.VNC_PW: "user"
+      services.firstuser.extraEnv.VNC_PW: "password"
       services.firstuser.ingressRoute.domain: "kasm.{{.Values.projectValues.rootDomain}}"
   basic-auth-gateway:
     namespace: routing

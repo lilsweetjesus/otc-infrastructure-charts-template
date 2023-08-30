@@ -37,7 +37,7 @@ charts:
     targetRevision: "0.1.1"
     parameters:
       services.firstuser.extraEnv.VNC_PW: "user"
-      services.firstuser.ingressRoute.domain: "admin.{{.Values.projectValues.rootDomain}}/kasm"
+      services.firstuser.ingressRoute.domain: "{{.Values.projectValues.rootDomain}}/kasm"
   basic-auth-gateway:
     namespace: routing
     targetRevision: 0.6.1

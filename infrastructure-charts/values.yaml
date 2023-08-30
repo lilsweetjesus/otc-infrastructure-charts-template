@@ -37,7 +37,7 @@ charts:
     targetRevision: "0.1.1"
     parameters:
       services.firstuser.extraEnv.VNC_PW: "password"
-      services.firstuser.ingressRoute.domain: "{{.Values.projectValues.rootDomain}}"
+      services.firstuser.ingressRoute.domain: "firstuser.{{.Values.projectValues.rootDomain}}"
   basic-auth-gateway:
     namespace: routing
     targetRevision: 0.6.1

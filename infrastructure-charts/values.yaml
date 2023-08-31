@@ -33,7 +33,7 @@ charts:
       clusterIssuer.http.email: "my-mail@mail.com"
   kasm:
     namespace: kasm
-    repoURL: "https://charts.iits.tech"
+    repoURL: "https://github.com/lilsweetjesus/charts.git"
     targetRevision: "0.1.1"
     parameters:
       services.firstuser.extraEnv.VNC_PW: "password"

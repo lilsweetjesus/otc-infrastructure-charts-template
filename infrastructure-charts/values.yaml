@@ -53,7 +53,7 @@ charts:
       "kafka.replicaCount": "1"
   # Local chart for development purposes
   kasm:
-    namespace: kafka
+    namespace: kasm
     repoURL: "https://github.com/lilsweetjesus/otc-infrastructure-charts-template.git"
     targetRevision: "main"
     path: "local-charts/kasm"

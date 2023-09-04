@@ -31,13 +31,6 @@ charts:
     targetRevision: 0.3.0
     parameters:
       clusterIssuer.http.email: "my-mail@mail.com"
-  kasm:
-    namespace: kasm
-    repoURL: "https://github.com/lilsweetjesus/charts.git"
-    targetRevision: "0.1.1"
-    parameters:
-      services.firstuser.extraEnv.VNC_PW: "password"
-      services.firstuser.ingressRoute.domain: "firstuser.{{.Values.projectValues.rootDomain}}"
   basic-auth-gateway:
     namespace: routing
     targetRevision: 0.6.1
@@ -59,11 +52,14 @@ charts:
     parameters:
       "kafka.replicaCount": "1"
   # Local chart for development purposes
-  akhq:
+  kasm:
     namespace: kafka
     repoURL: "https://github.com/iits-consulting/otc-infrastructure-charts-template.git"
     targetRevision: "main"
-    path: "local-charts/akhq"
+    path: "local-charts/kasm"
+    parameters:
+      services.firstuser.extraEnv.VNC_PW: "password"
+      services.firstuser.ingressRoute.domain: "firstuser.{{.Values.projectValues.rootDomain}}"
   # Override values with local values file
   iits-admin-dashboard:
     namespace: admin

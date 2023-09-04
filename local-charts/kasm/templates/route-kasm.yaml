@@ -11,4 +11,4 @@ spec:
       services:
         - name: {{ .Release.Name }}
           passHostHeader: true
-          port: {{.Values.akhq.service.port}}
+          port: {{.Values.kasm.service.port}}

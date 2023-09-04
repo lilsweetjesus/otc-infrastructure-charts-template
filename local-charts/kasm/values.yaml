@@ -1,0 +1,9 @@
+kasm:
+  services:
+    firstuser:
+      image:
+        repository: "iits/epikur_kasm"
+        tag: "0.0.1"
+        pullPolicy: "IfNotPresent"
+      extraEnv.VNC_PW: "password"
+      ingressRoute.domain: "kasm.workshop.iits.tech"

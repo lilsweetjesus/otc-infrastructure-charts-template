@@ -1,0 +1,8 @@
+apiVersion: v2
+dependencies:
+  - name: kasm
+    repository: https://charts.iits.tech
+    version: 0.1.1
+description: kasm
+name: kasm
+version: 0.0.1

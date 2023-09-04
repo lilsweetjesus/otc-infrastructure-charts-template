@@ -11,4 +11,4 @@ spec:
       services:
         - name: {{ .Release.Name }}
           passHostHeader: true
-          port: {{.Values.kasm.service.port}}
+          port: 6901

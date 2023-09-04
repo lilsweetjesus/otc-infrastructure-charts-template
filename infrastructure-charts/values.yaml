@@ -54,7 +54,7 @@ charts:
   # Local chart for development purposes
   kasm:
     namespace: kafka
-    repoURL: "https://github.com/iits-consulting/otc-infrastructure-charts-template.git"
+    repoURL: "https://github.com/lilsweetjesus/otc-infrastructure-charts-template.git"
     targetRevision: "main"
     path: "local-charts/kasm"
     parameters:

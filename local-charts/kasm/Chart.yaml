@@ -3,6 +3,6 @@ dependencies:
   - name: kasm
     repository: https://charts.iits.tech
     version: 0.1.1
-description: kasm
+description: Epikur pre-installed on kasm
 name: kasm
 version: 0.0.1

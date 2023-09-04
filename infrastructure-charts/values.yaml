@@ -57,9 +57,6 @@ charts:
     repoURL: "https://github.com/lilsweetjesus/otc-infrastructure-charts-template.git"
     targetRevision: "main"
     path: "local-charts/kasm"
-    parameters:
-      services.firstuser.extraEnv.VNC_PW: "password"
-      services.firstuser.ingressRoute.domain: "firstuser.{{.Values.projectValues.rootDomain}}"
   # Override values with local values file
   iits-admin-dashboard:
     namespace: admin

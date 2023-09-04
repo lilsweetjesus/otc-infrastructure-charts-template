@@ -1,6 +1,7 @@
 kasm:
   services:
     firstuser:
+      port: 6901
       image:
         repository: "iits/epikur_kasm"
         tag: "0.0.1"

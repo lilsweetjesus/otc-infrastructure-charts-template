@@ -21,7 +21,7 @@ kasm:
             - ALL
       ingressRoute:
         pathPrefix: "kasm"
-        domain: "kasm.workspace.iits.tech"
+        domain: "kasm.workshop.iits.tech"
         entryPointName: "websecure"
         certificate:
           # defaults to the service name + -cert

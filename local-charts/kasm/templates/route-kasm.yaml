@@ -4,11 +4,11 @@ metadata:
   name: {{.Release.Name}}
 spec:
   entryPoints:
-    - "kasm"
+    - {{.Values.services.kasm.ingressRoute.entryPointName}}
   routes:
     - kind: Rule
-      match: Host(`{{.Values.ingressRoute.adminDomain}}`) && PathPrefix(`{{.Values.ingressRoute.pathPrefix}}`)
+      match: Host(`{{.Values.services.kasm.ingressRoute.adminDomain}}`) && PathPrefix(`{{.Values.services.kasm.ingressRoute.pathPrefix}}`)
       services:
         - name: {{ .Release.Name }}
           passHostHeader: true
-          port: 6901
+          port: {{.Values.services.kasm.service.port}}

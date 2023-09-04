@@ -4,7 +4,7 @@ metadata:
   name: {{.Release.Name}}
 spec:
   entryPoints:
-    - {{.Values.ingressRoute.entryPointName}}
+    - kasm
   routes:
     - kind: Rule
       match: Host(`{{.Values.ingressRoute.adminDomain}}`) && PathPrefix(`{{.Values.ingressRoute.pathPrefix}}`)

@@ -20,7 +20,7 @@ services:
           - ALL
     ingressRoute:
       pathPrefix: "kasm"
-      domain: "REPLACE_ME"
+      domain: "kasm.workspace.iits.tech"
       entryPointName: "websecure"
       certificate:
         # defaults to the service name + -cert
@@ -48,7 +48,7 @@ services:
         cpu: 400m
         memory: 1024Mi
     extraEnv:
-      VNC_PW: "REPLACE_ME"
+      VNC_PW: "password"
       KASM_SVC_GAMEPAD: 0
       KASM_SVC_AUDIO_INPUT: 0
       KASM_SVC_UPLOADS: 0

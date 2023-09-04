@@ -1,5 +1,4 @@
 {{- range $chartName,$chartValues := .Values.charts }}
-{{- if ne $chartValues.enabled false }}
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -7,13 +6,6 @@ metadata:
   namespace: {{ $.Release.Namespace}}
   annotations:
     parametersChecksum: {{ (print $chartValues.parameters) | sha256sum}}-{{ print $.Values.global | sha256sum}}
-    {{- if $chartValues.valueFile }}
-    valueFileChecksum: {{ (print ($.Files.Get $chartValues.valueFile)) | sha256sum }}
-    {{- end }}
-  {{- if ne $chartValues.preventDelete true }}
-  finalizers:
-    - resources-finalizer.argocd.argoproj.io
-  {{- end }}
 spec:
   project: {{ ($.Values.projectValues).projectName | default $.Release.Name }}
   revisionHistoryLimit: 3
@@ -82,5 +74,4 @@ spec:
           forceString: true
        {{- end }}
 ---
-{{- end }}
 {{- end }}
